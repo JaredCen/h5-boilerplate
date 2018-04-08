@@ -2,10 +2,14 @@
   "name": "h5-boilerplate",
   "version": "0.0.1",
   "description": "基于原生的移动端h5模板",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
   },
   "author": "JunreyCen<junrey@foxmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.5.0",
+    "webpack-dev-server": "^3.1.2"
+  }
 }
