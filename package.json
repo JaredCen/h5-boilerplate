@@ -3,13 +3,34 @@
   "version": "0.0.1",
   "description": "基于原生的移动端h5模板",
   "scripts": {
-    "dev": "webpack-dev-server --open --mode development",
-    "build": "webpack --mode production"
+    "dev": "webpack-dev-server --config build/webpack.dev.conf.js",
+    "build": "webpack --config build/webpack.prod.conf.js"
   },
   "author": "JunreyCen<junrey@foxmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^8.3.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "es6-promise-promise": "^1.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.0.1",
+    "less-loader": "^4.1.0",
+    "optimize-css-assets-webpack-plugin": "^4.0.0",
+    "url-loader": "^1.0.1",
     "webpack": "^4.5.0",
-    "webpack-dev-server": "^3.1.2"
-  }
+    "webpack-dev-server": "^3.1.2",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {}
 }
