@@ -1,6 +1,7 @@
 const merge = require('webpack-merge');
 const baseWebpackConfig = require('./webpack.base.conf');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const LodashModulePlugin = require('lodash-webpack-plugin');
 
 module.exports = merge(baseWebpackConfig, {
     mode: 'production',
@@ -25,6 +26,7 @@ module.exports = merge(baseWebpackConfig, {
         }
     },
     plugins: [
+        new LodashModulePlugin(),
         new webpack.ProvidePlugin({
             Promise: 'es6-promise-promise',
         }),
